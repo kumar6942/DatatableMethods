@@ -113,13 +113,13 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="925.9999999999999,970.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="925.9999999999999,1134.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="520.6666666666666,948" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="520.6666666666666,1112" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="sd:DataTable" Name="dtInput" />
         <Variable x:TypeArguments="sd:DataTable" Name="dt_New" />
@@ -132,9 +132,9 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486.6666666666667,137.33333333333334" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486.6666666666667,182.66666666666666" sap2010:WorkflowViewState.IdRef="CommentOut_1">
         <ui:CommentOut.Body>
-          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,70.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -143,11 +143,7 @@
             </sap:WorkflowViewStateService.ViewState>
             <Sequence DisplayName="Get uniquee elements from two arrays and concatenate" sap:VirtualizedContainerService.HintSize="468,425.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <Sequence.Variables>
-                <Variable x:TypeArguments="x:Int32" Name="Arr1">
-                  <Variable.Default>
-                    <VisualBasicValue x:TypeArguments="x:Int32" ExpressionText="new Int32()" />
-                  </Variable.Default>
-                </Variable>
+                <Variable x:TypeArguments="x:Int32" Default="[new Int32()]" Name="Arr1" />
               </Sequence.Variables>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -183,6 +179,7 @@
           </Sequence>
         </ui:CommentOut.Body>
       </ui:CommentOut>
+      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="486.6666666666667,118.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Read the excel file&quot;]" />
       <ui:ReadRange WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dtInput]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="486.6666666666667,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet2" WorkbookPath="C:\Users\aryan\Desktop\Test file.xlsx">
         <ui:ReadRange.Range>
           <InArgument x:TypeArguments="x:String">
